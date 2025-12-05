@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multimedia Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: '#ff7631',
+                black: '#000000',
+                white: '#ffffff',
+                gray600: '#8e8e8e',
+                gray800: '#555555',
+                gray900: '#393939',
+                gray950: '#2c2c2c',
+              }
+            },
+            fontFamily: {
+              sans: ['Mabry', 'sans-serif'],
+            },
+            spacing: {
+              'container': '108px',
+              'section': '48px',
+              'card': '20px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Fallback for Mabry font simulation */
+      @font-face {
+        font-family: 'Mabry';
+        src: local('Arial'); 
+        /* Since we don't have the actual font file, we rely on system sans-serif, 
+           but define the family name to match the CSS config */
+      }
+      body {
+        background-color: #000000;
+        color: #ffffff;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

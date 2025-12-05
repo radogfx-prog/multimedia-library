@@ -1,0 +1,5 @@
+{
+  "name": "Multimedia Library Interface",
+  "description": "A high-fidelity implementation of a multimedia asset library with advanced filtering, conforming to specific design tokens and accessibility standards.",
+  "requestFramePermissions": []
+}
